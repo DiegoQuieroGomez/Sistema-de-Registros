@@ -1,0 +1,124 @@
+<div class="">
+
+    <form action=""> Nuevo Registro
+        <fieldset>
+            <legend>Orden y Etapa</legend>
+            <label for="">Tipo</label>
+            <select name="tipo" id="tipo">
+                <option value="rechazoTotal">Rechazo Total</option>
+                <option value="rechazoParcial">Rechazo Parcial</option>
+                <option value="reclamo">Reclamo</option>
+                <option value="merma">Merma 1%</option>
+            </select>
+            <br>
+            <span>
+                <label for="">Orden</label>
+                <input type="text" name="orden" id="orden">
+                <br>
+                <label for="">Origen</label>
+                <select name="origen" id="origen" onchange="mostrar(this.value)">
+                    <option value="paraguay">Paraguay</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                </select>
+                <select name="planta" id="paraguay">
+                    <option value="2frigomerc">2-Frigomerc</option>
+                    <option value="8frigomerc">8-Frigomerc</option>
+                    <option value="3sanAntonio">3-San Antonio</option>
+                    <option value="23belen">23-Belén</option>
+                </select>
+                <select name="planta" id="uruguay">
+                    <option value="canelones">Canelones</option>
+                    <option value="carrasco">Carrasco</option>
+                    <option value="pulsa">Pulsa</option>
+                </select>
+                <select name="planta" id="brasil">
+
+                </select>
+                <select name="planta" id="argentina">
+                    <option value="13rosario">13-Rosario</option>
+                </select>
+                <select name="planta" id="colombia">
+                    <option value="680cienaga">680-Cienaga de oro</option>
+                    <option value="341BD">341-Bucaramanga</option>
+                </select>
+            </span>
+            <br>
+            <label for="">Etapa</label>
+            <select name="etapa" id="etapa">
+                <option value="esperaPrecio">Espera de precio</option>
+                <option value="esperaAprobacion">Espera de aprobacion</option>
+                <option value="esperaFactura">Esperando factura cliente</option>
+                <option value="esperaPago">Esperando pago de Origen</option>
+            </select>
+            <br>
+            <label for="">Fluig</label>
+            <input type="number" name="fluig" id="fluig">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Facturacion Cliente</legend>
+            <label for="">Cliente</label>
+            <input type="text" name="cliente" id="cliente">
+            <br>
+            <label for="">N° Factura</label>
+            <input type="text" name="facturaC" id="facturaC">
+            <br>
+            <label for="">Monto Neto</label>
+            <input type="number" name="montoNetoC" id="montoNetoC">
+            <br>
+            <label for="">Transporte</label>
+            <input type="text" name="transporte" id="transporte">
+            <br>
+            <label for="">Almacenaje</label>
+            <input type="text" name="almacenaje" id="almacenaje">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Facturacion Reventa</legend>
+            <label for="">Cliente</label>
+            <input type="text" name="clienteReventa" id="clienteReventa">
+             <br>
+            <label for="">N° Factura</label>
+            <input type="text" name="facturaR" id="facturaR">
+            <br>
+            <label for="">Monto Neto</label>
+            <input type="number" name="montoNetoR" id="montoNetoR">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Facturacion Origen</legend>
+            <label for="">Razon</label>
+            <input type="text" name="Razon" id="razon" value="">
+             <br>
+            <label for="">N° Factura</label>
+            <input type="text" name="facturaOrigen" id="facturaOrigen">
+            <br>
+            <label for="">Monto Neto CLP</label>
+            <input type="number" name="montoNetoOrigenCLP" id="montoNetoOrigenCLP">
+            <br>
+            <label for="">Monto neto USD</label>
+            <input type="number" name="montoNetoOrigenUsd" id="montoNetoOrigenUsd">
+            <br>
+            <label for="">TC</label>
+            <input type="number" name="tc" id="tc">
+        </fieldset>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</div>
